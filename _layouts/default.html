@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="{{ site.author }}" />
+{% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+<title>{{ page.title }} | {{ site.author }}</title>
+<link href="/jcss/images/header.jpg" rel="shortcut icon" type="image/x-icon" />
+<link href="/pages/feed/" rel="alternate" title="{{ site.author }}" type="application/atom+xml" />
+<link rel="stylesheet" href="/jcss/css/HomGH.css">
+
+<!--For web statistics by GA/Baidu, config in _config.yml-->
+{% if site.googleAnaly.config %}
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', '{{ site.googleAnaly.id }}', 'auto');
+	ga('send', 'pageview');
+</script>
+{% endif %}
+
+{% if site.baiduTongji.config %}
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?{{ site.baiduTongji.id }}";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+{% endif %}
+
+<!--busuanzi for statistics of static web-->
+<script async src="/jcss/js/busuanzi23.pure.mini.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<div id="main" role="main">
+<header>
+
+{% if layout.page_title or page.page_title %}
+<h1 class="page_title">{{ page.title }}</h1>
+{% else %}
+<h1 class="page_title">Hom's Blog</h1>
+{% endif %}
+<div class="buttons">
+<a href="/" title="Go to homepage">Home</a>
+<a href="/pages/categories/" title="Category" >Category</a>
+<a href="/pages/tags/" title="Tag Cloud" >Tags</a>
+<a href="/pages/links/" title="Links" >Link</a>
+<a href="/pages/about/" title="About" >About</a>
+<a href="/pages/feed/feed.xml" title="Subscribe by RSS" >RSS</a>
+<!--
+</br>
+<input type="button" id='changewidthbutton' value="85%W" onclick="changewidth(this.value)">
+<script>
+function changewidth(str) {
+	if(str=='100%W') {
+		document.getElementById('changewidthbutton').value="70%W";
+		//$('TOC').style.display="block"
+		document.getElementById('container').style.width="100%"
+		//document.getElementById('container').style.margin="1em auto"
+	} 
+	else if (str=='85%W'){
+		document.getElementById('changewidthbutton').value="100%W";
+		document.getElementById('container').style.width="85%"		
+	}
+	else {
+		document.getElementById('changewidthbutton').value="85%W";
+		document.getElementById('container').style.width="70%"
+	}
+}
+</script>
+-->
+</div>
+
+</header>
+
+{% if layout.page_title or page.page_title %}
+<hr class="title-hr">
+{% else %}
+<hr class="title-hr"> <h1 class="post_title">{{ page.title }}</h1>
+{% endif %}
+
+<article class="content">{{ content }}</article>
+</div>
+
+<footer name="footer"><p><small>
+
+<span id="busuanzi_container_site_pv">本站<a href="http://ibruce.info/2015/04/04/busuanzi">总访问量</a><span id="busuanzi_value_site_pv"></span>次</span><span id="busuanzi_container_site_uv"></span>, 访客数<span id="busuanzi_value_site_uv"></span>人. &nbsp;&nbsp; | &nbsp;&nbsp;Give your Comments: <a href="/pages/guestbook/" title="Guest Book" >留言</a>&nbsp;&nbsp; | &nbsp;&nbsp;<span class="label label-info">Last updated: {{site.time | date:"%Y-%m-%d %H:%M:%S %Z"}}</span></br>
+Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> | <span class="license">License: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">(CC) BY-NC-SA</a></span>&nbsp;&nbsp; | &nbsp;&nbsp;Copyright 2015 - {{site.time | date:"%Y"}} by <a href="/pages/about/">Hom</a> -- Contact me in <a href="http://weibo.com/234020806/" target="_blank">Weibo </a>
+</small></p></footer>
+<!--Fixed Goto top botton-->
+<div id="GoTop">
+<a href="#top">GoTop</a>
+</div>
+
+</div>
+</body></html>

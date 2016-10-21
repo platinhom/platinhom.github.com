@@ -1,0 +1,22 @@
+---
+layout: default
+page_title: yes
+---
+
+<div style="position: fixed; _position: absolute;  right: 30px; top: 25px; _top: 0px; z-index: 98;">
+<nav id="sub-nav"><a id="nav-search-btn" class="nav-icon" title="Search"></a></nav>
+<div id="search-form-wrap"><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><input type="submit" value="&#xF002;" class="search-form-submit"><input type="hidden" name="q" value="site:http://platinhom.coding.me"></form></div>
+<link rel="stylesheet" href="/jcss/css/style.css" type="text/css">
+<script src="/jcss/js/jquery.min.js"></script>
+ <link rel="stylesheet" href="/jcss/css/jquery.fancybox.css" type="text/css">
+ <script src="/jcss/js/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script src="/jcss/js/script.js" type="text/javascript"></script>
+</div>
+
+<section class="post">
+<link rel="stylesheet" href="/jcss/css/HomGH_small.css" type="text/css">
+{{ content }}
+</section>
+{% if page.comment %}
+{% include comments.md %}
+{% endif %}

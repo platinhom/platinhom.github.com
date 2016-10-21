@@ -1,0 +1,45 @@
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+url: http://platinhom.github.io
+author: Hom
+#pygments: true
+#safe: true
+paginate: 25
+paginate_path: "/page:num/"
+gems: [jekyll-paginate]
+
+#auto: true
+encoding: "utf-8"
+highlighter: rouge
+
+kramdown:
+  syntax_highlighter: rouge
+#  syntax_highlighter_opts:: {disable: true}
+
+# Time Zone +8 China
+timezone: Asia/Shanghai
+
+###User define variants
+#googleAnaly, your id link UA-12345678-X
+googleAnaly:
+  config: true
+  id: UA-63959820-1
+
+#baidu tongji
+baiduTongji:
+  config: true
+  id: 07b65937d246126401c393da419d851e
+
+#comment config
+disqus:
+  config: true
+  id: platinhom
+
+duoshuo:
+  config: false
+  id: platinhom
+
+#baidu share config
+baiduShare:
+  config: false
+

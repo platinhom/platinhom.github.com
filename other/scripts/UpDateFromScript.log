@@ -1,0 +1,16 @@
+Fri Jun 26 01:39:01 CST 2015
+/c/Users/Hom/Desktop/MyGit/platinhom/platinhom.github.com/_posts/2015-06-26-Update-blog-codes.md-tmp.md /c/Users/Hom/Desktop/MyGit/platinhom/platinhom.github.com/_posts/2015-06-26-Update-blog-codes.md
+168,169c168
+< 			# revise to fi in tmp[2]. To support link as [filename](link)
+< 			if (tmp[1].upper()[:4]=="FILE" and (fi in tmp[2])):
+---
+> 			if (tmp[1].upper()[:4]=="FILE" and tmp[2]==fi):
+/c/Users/Hom/Desktop/MyGit/platinhom/platinhom.github.com/_posts/2015-06-26-Update-blog-codes.md-tmp.md /c/Users/Hom/Desktop/MyGit/platinhom/platinhom.github.com/_posts/2015-06-26-Update-blog-codes.md
+54,55d53
+< # Also support the filename as link in markdown:
+< # ###### FILE: [UPDateFromScript.sh](link)
+89c87
+< 	grep "^###### FILE:" ${pd}/*.[mh]*[dl] | grep "$fii" | awk -F \: '{print $1}' >>linkfile
+---
+> 	grep "$fii" ${pd}/*.[mh]*[dl] | grep "###### FILE:" | awk -F \: '{print $1}' >>linkfile
+
