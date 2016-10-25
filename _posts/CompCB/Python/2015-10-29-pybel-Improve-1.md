@@ -6,6 +6,7 @@ categories: CompCB
 tags: Python CompChem
 ---
 
+{% raw %}
 以下是2015.10月抓Github上装上的Pybel版本.相比发布版多了很多内容, 再次学习一下.  
 
 相比1.8版, 加入了一些新的功能, 并加入了电荷计算和Residue类. 我需要Bond啊...
@@ -1235,5 +1236,7 @@ class Residue(object):
 4. [OpenBabel Documentation](http://open-babel.readthedocs.org/en/latest/index.html)
 5. [OpenBabel-Python](http://open-babel.readthedocs.org/en/latest/UseTheLibrary/Python.html)
 6. [Openbabel-Github](https://github.com/openbabel/openbabel)
+
+{% endrow %}
 
 ------
