@@ -1,6 +1,6 @@
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
-url: http://gohom.win
+url: http://platinhom.github.io
 source_url: https://github.com/platinhom/platinhom.github.com/blob/master/
 author: Hom
 #pygments: true

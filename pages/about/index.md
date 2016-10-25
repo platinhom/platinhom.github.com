@@ -7,16 +7,13 @@ layout: page
 
 > 不积跬步，无以至千里；不积小流，无以成江海。 -- 荀子
 
-用来mark下学到的新东东, 还有分享一些脚本啊啥的. 说白了这就是个基本自己全盘管理的笔记本 =.=
+## 自我简介 / About Me
 
-----------
+&nbsp;&nbsp;&nbsp;&nbsp;  业余编程爱好者, 喜欢折腾各种程序和系统. 主业是**计算机辅助药物设计**研究人员, 从事计算生物学, 计算化学, 化学信息和生物信息等相关研究. 研究兴趣是改进药物设计计算算法, 提高辅助模拟可靠性, 使计算在科学中得到更多应用, 而不是戴着"马后炮"的帽子.    
 
-&nbsp;&nbsp;&nbsp;&nbsp;  I'm doing research in computational chemistry/biology. My reseach interest includes computer-aided drug design, chemoinformatic, computational biology. I also love the research for organic mass spectromety and organic chemistry I did before. I wanna combine my knowledge on computational chemistry/biology and organic chemistry to solve problems in sciences, especially in drug design.  
+&nbsp;&nbsp;&nbsp;&nbsp;  因为涉及的东东比较广, 脑袋实在不够用, 在这里作记录和分享, 希望能帮到大家啦!~ 因其实质是个个人在线笔记本, 记东西比较乱, 也没有太多时间整理, 希望不要介意~ 欢迎提供宝贵意见 [comments](/pages/guestbook/) 或者给我mail: zhaozxcpu(at)hotmail.com !   
 
-&nbsp;&nbsp;&nbsp;&nbsp;  Computation related sciences need to remember lots of information. Here I just put some notes on my blog and sometimes it's incompleted :-) Hope it can help!  
-
-&nbsp;&nbsp;&nbsp;&nbsp;  Welcome to give your valuable [comments](/pages/guestbook/) or mail to me: zhaozxcpu(at)hotmail.com !   
-
+&nbsp;&nbsp;&nbsp;&nbsp;  下年等基金申请过后上课以后闲下来, 打算用比较fancy的js来重造博客界面. 希望有时间吧.
 
 ## Some Tools I developed:
 - [MIBPB webserver](http://weilab.math.msu.edu/MIBPB/): automatic online server based on matched interface PB solver to calculate electrostatic solvation energy, ESES/MSMS surface, structure preparation and residue pKa calculation. 
@@ -24,8 +21,6 @@ layout: page
 - AutoPhD (Pharmacophore Deduction): Pharmacophore perception for ligand/protein or protein/protein complex.
 
 ## Publications
-
-### Published
 
 20. Automatic parametrization of non-polar implicit solvent models for the blind prediction of solvation free energies. *J. Chem. Phys.*, **2016**, *145*, 124110. [Link](http://scitation.aip.org/content/aip/journal/jcp/145/12/10.1063/1.4963193)
 19. AutoT&T v.2: An Efficient and Versatile Tool for Lead Structure Generation and Optimization. *J. Chem. Inf. Model*, **2016**, *56*, 435–453. [Link](http://pubs.acs.org/doi/abs/10.1021/acs.jcim.5b00691)
@@ -49,10 +44,6 @@ Molecular Modeling. *ChemMedChem* **2013**, *8*, 1270-1275. (Back Cover) [Link](
 2. Studies of the Interesting Gas-Phase Rearrangement Reactions of 2-Pyrimidinyloxy-N-arylbenzylurea Promoted by Urea-Carbaminidic Acid Tautomerism by ESI-MS/MS and Theoretical Computation. *Chin. J. Chem.* **2010**, *28*, 1765-1772. [Link](http://onlinelibrary.wiley.com/doi/10.1002/cjoc.201090298/abstract)
 1. Progress in ESI-MS Study for the Catalytic Asymmetric Reactions. *Chinese J. Org. Chem.* **2010**, *30*, 809-815. [Link](http://sioc-journal.cn/Jwk_yjhx/EN/abstract/abstract338923.shtml)
 
-### May publish
-
-2. MIBPB based solvation models (2016)
-3. MIBPB based protein-ligand binding models (2016)
 
 ## Hobbies
 

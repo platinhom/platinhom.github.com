@@ -39,7 +39,7 @@ sudo /etc/init.d/squid restart
 
 这应该是较简单的方法之一, 要求就是你可以ssh登陆到一个海外的服务器, 这个服务器能打开海外网站~ 简单介绍看[SSH隧道翻墙的原理和实现](https://segmentfault.com/a/1190000003939615)吧. 这玩意又叫 SOCKS/HTTP Proxy Forwarding. 其实就是很简单, 就是SSH登陆时增加`-D 端口号`将本地访问互联网的请求通过该端口转到SSH服务器, 然后再接收回来. 就那么简单.
 
- ~~~bash
+~~~bash
 # 一般执行下面的就行
 ssh -N -D 7070 username@ip_address
 # 转发远程主机的指定端口到本地端口<local port>
