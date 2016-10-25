@@ -2,13 +2,13 @@
 
 - 模板取自于 [哲科文](http://jerkwin.github.io/),此博客采用了 [卢克进](http://geeklu.com/) 的主题, 并稍加修改.
 - 此博客使用[kramdown](http://kramdown.gettalong.org/)作为markdown解析.
-- 此博客的代码高亮默认使用[Rouge](http://rouge.jneen.net/), 兼容之前使用的[prism](http://prismjs.com/). (之前模板使用Prism,也可使用`post_py`模板来使用[pygment](http://pygments.org/).
+- 此博客的代码高亮默认使用[Rouge](http://rouge.jneen.net/), 兼容之前使用的[prism](http://prismjs.com/). (之前模板使用Prism~~,也可使用`post_py`模板来使用[pygment](http://pygments.org/)~~ ).
 - 此博客的网站统计使用了[静态网页统计: 不蒜子](http://ibruce.info/2015/04/04/busuanzi/),[GA](http://www.google.com/analytics/ce/mws/),[百度统计](http://tongji.baidu.com/web/welcome/login).
 - 此博客的评论功能使用了[多说](http://duoshuo.com/) 或[Disqus](https://disqus.com/).
 - 此博客可以使用数学公式处理: [MathJax](https://www.mathjax.org/), 需要使用`post_mathjax`模板.
 - 此博客支持左侧显示文章骨架总目录(TOC). 需要使用`post_toc`模板.
 - 此博客基础模板post不使用jquery, 需要使用请用`post_jq`模板.
-- 博文可以在下方直接点进Github源文件进行查看编辑
+- 博文可以在下方直接点`Source`进入Github源文件进行查看编辑
 
 ### 简要文件介绍
 
