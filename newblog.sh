@@ -10,7 +10,7 @@
 nowsys=`uname -s`
 # For MacOS
 if [ $nowsys == "Darwin" ];then
-	alias subl="/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl"
+	alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 # For MINGW in Window
 elif [ ${nowsys:0:5} == "MINGW" ];then
 	alias subl="/c/Program\ Files/Sublime\ Text\ 3/subl.exe"

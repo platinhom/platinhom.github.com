@@ -2,7 +2,7 @@
 
 - 模板取自于 [哲科文](http://jerkwin.github.io/),此博客采用了 [卢克进](http://geeklu.com/) 的主题, 并稍加修改.
 - 此博客使用[kramdown](http://kramdown.gettalong.org/)作为markdown解析.
-- 此博客的代码高亮默认使用[Rouge](http://rouge.jneen.net/), 兼容之前使用的[prism](http://prismjs.com/). (之前模板使用Prism~~,也可使用`post_py`模板来使用[pygment](http://pygments.org/)~~ ).
+- 此博客的代码高亮默认使用[Rouge](http://rouge.jneen.net/), 兼容之前使用的[prism](http://prismjs.com/). (之前模板使用Prism ~~,也可使用`post_py`模板来使用[pygment](http://pygments.org/)~~ ).
 - 此博客的网站统计使用了[静态网页统计: 不蒜子](http://ibruce.info/2015/04/04/busuanzi/),[GA](http://www.google.com/analytics/ce/mws/),[百度统计](http://tongji.baidu.com/web/welcome/login).
 - 此博客的评论功能使用了[多说](http://duoshuo.com/) 或[Disqus](https://disqus.com/).
 - 此博客可以使用数学公式处理: [MathJax](https://www.mathjax.org/), 需要使用`post_mathjax`模板.
@@ -27,7 +27,7 @@
 - `_includes`: Jekyll插件或其余加载的内容, 这里只有 **评论** 的加载
 - `_drafts`: 草稿文件, 不会被发布. 
 - `_site` : Jekyll 生成的网站架构和页面, 一般只在本地存在.
-- `pages` : 首页以外各个页面的储存. 
+- `pages` : 首页以外各个页面的储存. 因为新版的Jekyll处理非`_posts`的档案时会以`/pages/文件名/index.html`来生成链接, 因此要用`原文件名.html`的需要博客开头使用`permalink: `.
 - `blogpic` : 放博文的图片
 - `jcss` : image,css,js 等素材和配置
 	- jcss/images: 一些必要的网页页面需要用到的图片素材
