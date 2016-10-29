@@ -9,12 +9,11 @@ tags: Git Web Software
 之前window安装一直没成功...今天再尝试一下,终于弄好了. Thanks to  Julian Thilo! (Ref1)
 
 - 安装[Ruby](http://rubyinstaller.org/downloads/).注意mingw的版本,要是32位版本,即使是64位系统也要下32位版本(就是没有x64的). 默认安装后ruby的路径会加入到环境变量(安装时有勾选),即可以直接运行.当然, 没有的话自己设置一下.
-
 - 安装[Gem](https://rubygems.org/pages/download) Gem是Ruby里的软件包管理器,类似于python的PIP.下载后解压,`ruby setup.rb` 就可以了.根据教程貌似不用安装,但安装jekyll时需要gem命令,不知道ruby是否自带(更新: 经再次安装,发现是自带的).我之前装过了.
-
 - 安装[DevKit](http://rubyinstaller.org/downloads/). `ruby -v` 查看ruby版本,注意后面是i386还是x64位.前者的话下载(DevKit-mingw64-32-\*-sfx.exe).也要根据你的ruby版本选择啦.双击可执行文件,指定一个解压路径,例如解压到 *C:\Software\RubyDevKit* .进入该文件夹,运行命令`ruby dk.rb init;ruby dk.rb install`, 将devkit注册到ruby相关并安装.
-
-- 安装Jekyll: 命令: `gem install jekyll`. 要是运行后失败,在devkit文件夹内双击msys.bat打开相应的shell再执行.然后就等啊等.直到安装完成. 此时运行jekyll server 会发现失败.主要是highlighter问题. 提示新版里,pygments选项已经过时,需要使用highlighter.如果不使用pygments,装rouge的话,`gem install rouge`安装. _config.yml注册:`highlighter: rouge`即可.
+- 安装Jekyll: 命令: `gem install jekyll`. 要是运行后失败,在devkit文件夹内双击msys.bat打开相应的shell再执行.然后就等啊等.直到安装完成. 此时运行jekyll server 来测试运行, 可能会发现失败.
+  - "Yikes! It looks like you don't have jekyll-paginate or one of its dependencies installed.": 解决: `gem install jekyll-paginate`
+  - 主要是highlighter问题. 提示新版里,pygments选项已经过时,需要使用highlighter.如果不使用pygments,装rouge的话,`gem install rouge`安装. _config.yml注册:`highlighter: rouge`即可.
 
 
 - 安装[PIP](https://pip.pypa.io/en/latest/installing.html).有了PIP才好装pygments. 新版本python自带PIP,否则下载get-pip.py运行`python get-pip.py`即可安装完成(会自动装setuptools). 此时pip还不能运行,除非你用绝对路径. 把*C:\Python27\Scripts*(根据自己python的路径)加入到环境变量,就可以直接运行pip了. 
