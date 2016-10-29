@@ -44,6 +44,7 @@
 	- 用法 : `./newblog.sh blogname catagory tag1 tag2..`
 	- 博客名不要有`:`,有特殊符号请用双引号`".."`. 
 	- **第一标签**名比较重要, 影响后续子文件夹分类, **建议将该博文最具特点最易关联的作为第一标签**
+- `draft.sh` : 产生新博客, 但放在drafts里面. 类似于`newblog.sh`
 - `gitsubmit.sh` : 提交更新到github. 
 	- 用法 : `./gitsubmit.sh`. 可以加一参数作为commit comment, 如有空格请加双引号 `" .. "`. 
 	- ( Gitcaft 已作废, 此功能失效 ) 也可以提交到gitcafe,后面随便跟个选项如`./gitsubmit.sh comment a` 
